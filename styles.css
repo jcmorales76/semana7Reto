@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Montserrat";
+  color: #4f4f4f;
+  background-color: #f2f2f2;
+}
+
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.contenedor {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.imgBilly {
+  width: 100%;
+}
+
+.contacto {
+  margin-top: 30px;
+}
+.contenedor_contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imgIcono {
+  width: 20px;
+  height: 20px;
+  padding-right: 15px;
+}
+
+.p_contacto {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 0px;
+}
+
+.p_contacto2 {
+  margin-top: 30px;
+  padding-right: 70px;
+  font-size: 18px;
+}
+
+/* EXPERIENCIA */
+.Titulo {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.contenedor_exp {
+  display: flex;
+}
+.imgExp {
+  width: 60px;
+  margin-right: 20px;
+  padding-top: 20px;
+}
+
+.titulo_exp {
+  line-height: 15px;
+  margin-bottom: 35px;
+}
+
+.titulo_cargo {
+  font-weight: 600;
+}
+
+/* HOBBIES */
+.imgHobbies {
+  width: 100%;
+}
+.experiencia {
+  margin-bottom: 35px;
+}
+.titulo_Hobbies {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* SECCION skill */
+
+.skill {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.frontend {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.progreso_exp div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+progress {
+  width: 50%;
+}
+
+.design {
+  margin-top: 48px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 48px;
+}
+
+.progreso_titulo p {
+  margin-right: 70px;
+  width: 105px;
+}
+
+.barra_contenedor {
+  line-height: 37px;
+}
+
+.titulo_progreso {
+  font-weight: 700;
+}
+
+/* Projects */
+.projectsImg {
+  display: flex;
+  justify-content: center;
+}
+
+.titulosProjects p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.titulosProjects h2 {
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+.contenidoProjects p {
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+.botonesProjects_btn1 {
+  background-color: #2f80ed;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  margin-right: 5px;
+}
+
+.botonesProjects_btn2 {
+  background-color: white;
+  border: 1px solid #2f80ed;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: #2f80ed;
+}
+
+/* BLOGS */
+.titulosBlogs p {
+  font-size: 12px;
+  color: #e0e0e0;
+}
+.titulosBlogs h2 {
+  font-weight: 500;
+  width: 140px;
+  line-height: 25px;
+}
+
+.contenidoBlogs p {
+  font-size: 13px;
+}
+
+.devto p {
+  color: #2f80ed;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (min-width: 1100px) {
+  main {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .skill {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    align-items: flex-start;
+  }
+  .design {
+    margin-top: 0px;
+  }
+  .projects {
+    display: flex;
+    gap: 25px;
+  }
+
+  .blog {
+    display: flex;
+    gap: 25px;
+  }
+}
